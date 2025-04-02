@@ -1,253 +1,277 @@
-# ИНСТРУКЦИЯ ПО УСТАНОВКЕ И ЗАПУСКУ TELEGRAM-БОТА МАГАЗИНА
+🔥 Telegram-Bot-for-Simple-E-commerce-Store
 
-## ЧТО ДЕЛАЕТ ЭТОТ БОТ?
+Want to sell products via Telegram? 🚀
+Your customers are already on Telegram! But how do you set up an easy ordering process without complex websites?
 
-Этот бот представляет собой простой магазин в Telegram, где пользователи могут:
-- Просматривать товары в каталоге
-- Добавлять товары в корзину
-- Оформлять заказы
-- Администратор получает уведомления о новых заказах
+✅ The solution – this bot!
 
-## УСТАНОВКА НА WINDOWS
+With this bot, you can create a simple online store directly in Telegram. Your customers will be able to:
 
-### Шаг 1: Установка Python
+• 📜 Browse the product catalog
+• 🛒 Add items to the cart
+• 💳 Place orders right in the chat
+• 🔔 Receive order status updates
 
-1. Скачайте Python 3.10 с официального сайта: https://www.python.org/downloads/release/python-31011/
-   (Прокрутите страницу вниз и выберите "Windows installer (64-bit)")
+🔧 Features
 
-2. Запустите скачанный файл установки
-   - Обязательно поставьте галочку "Add Python to PATH"
-   - Нажмите "Install Now"
+✅ Database support for storing products and orders
+✅ User-friendly admin panel for order management
+✅ Automated notifications about purchase status
 
-3. Дождитесь завершения установки
+📩 How to get this bot?
 
-### Шаг 2: Скачивание файлов бота
+Just message me on Telegram, and I'll help you launch a full-fledged store right in your chat! 🚀
 
-1. Создайте на компьютере папку для бота, например, C:\TelegramBot
+# INSTRUCTIONS FOR INSTALLING AND LAUNCHING THE STORE TELEGRAM BOT
 
-2. Сохраните файл `telegram_shop_bot.py` в эту папку 
+## WHAT DOES THIS BOT DO?
 
-### Шаг 3: Установка необходимых библиотек
+This bot is a simple store in Telegram, where users can:
+- View products in the catalog
+- Add products to the cart
+- Place orders
+- The administrator receives notifications about new orders
 
-1. Откройте командную строку Windows:
-   - Нажмите Win+R
-   - Введите cmd и нажмите Enter
+## INSTALLATION ON WINDOWS
 
-2. В открывшейся командной строке перейдите в папку с ботом:
-   ```
-   cd C:\TelegramBot
-   ```
+### Step 1: Install Python
 
-3. Установите необходимые библиотеки, введя команду:
-   ```
-   pip install aiogram==3.0.0
-   ```
+1. Download Python 3.10 from the official website: https://www.python.org/downloads/release/python-31011/
+(Scroll down and select "Windows installer (64-bit)")
 
-### Шаг 4: Получение токена Telegram-бота
+2. Run the downloaded installation file
+- Be sure to check the "Add Python to PATH" box
+- Click "Install Now"
 
-1. Откройте Telegram и найдите бота @BotFather
+3. Wait for the installation to complete
 
-2. Отправьте сообщение /newbot
+### Step 2: Downloading bot files
 
-3. Следуйте инструкциям BotFather:
-   - Введите название бота
-   - Введите имя пользователя для бота (должно заканчиваться на "bot")
+1. Create a folder for the bot on your computer, for example, C:\TelegramBot
 
-4. BotFather пришлет вам токен вида 1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
+2. Save the `telegram_shop_bot.py` file to this folder
 
-5. Скопируйте этот токен
+### Step 3: Installing the required libraries
 
-### Шаг 5: Настройка бота
+1. Open the Windows command prompt:
+- Press Win+R
+- Type cmd and press Enter
 
-1. Откройте файл `telegram_shop_bot.py` в текстовом редакторе Блокнот:
-   - Найдите строку `API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'`
-   - Замените 'YOUR_TELEGRAM_BOT_TOKEN' на ваш токен от BotFather
+2. In the command prompt that opens, go to the folder with the bot:
+```
+cd C:\TelegramBot
+```
 
-2. Чтобы узнать свой ID (для админа):
-   - Найдите в Telegram бота @userinfobot
-   - Отправьте ему любое сообщение
-   - Он ответит вам ваш ID
-   
-3. Вернитесь в файл `telegram_shop_bot.py`:
-   - Найдите строку `ADMIN_ID = 12345678`
-   - Замените 12345678 на ваш ID из предыдущего шага
-   
-4. Сохраните изменения в файле
+3. Install the required libraries by entering the command:
+```
+pip install aiogram==3.0.0
+```
 
-### Шаг 6: Запуск бота
+### Step 4: Getting the Telegram bot token
 
-1. Откройте командную строку Windows (если закрыли):
-   - Нажмите Win+R
-   - Введите cmd и нажмите Enter
+1. Open Telegram and find the @BotFather bot
 
-2. Перейдите в папку с ботом:
-   ```
-   cd C:\TelegramBot
-   ```
+2. Send a message /newbot
 
-3. Запустите бота, введя команду:
-   ```
-   python telegram_shop_bot.py
-   ```
+3. Follow the instructions from BotFather:
+- Enter the name of the bot
+- Enter the username for the bot (must end with "bot")
 
-4. Если все сделано правильно, в командной строке появится информация о запуске бота
+4. BotFather will send you a token like 1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-5. Теперь перейдите в Telegram и найдите вашего бота по имени пользователя, которое вы задали в BotFather
+5. Copy this token
 
-6. Отправьте боту команду /start и начните использовать
+### Step 5: Setting up the bot
 
-7. Чтобы остановить бота, вернитесь в командную строку и нажмите Ctrl+C
+1. Open the `telegram_shop_bot.py` file in the Notepad text editor:
+- Find the line `API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'`
+- Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your token from BotFather
 
-## УСТАНОВКА НА LINUX
+2. To find out your ID (for admin):
+- Find the @userinfobot bot in Telegram
+- Send it any message
+- It will reply you with your ID
 
-### Шаг 1: Установка Python
+3. Return to the `telegram_shop_bot.py` file:
+- Find the line `ADMIN_ID = 12345678`
+- Replace 12345678 with your ID from the previous step
 
-1. Откройте терминал (обычно Ctrl+Alt+T)
+4. Save the changes to the file
 
-2. Обновите список пакетов:
-   ```
-   sudo apt update
-   ```
+### Step 6: Running the bot
 
-3. Установите Python 3.10:
-   ```
-   sudo apt install python3.10 python3.10-venv python3-pip
-   ```
+1. Open the Windows command prompt (if closed):
+- Press Win+R
+- Type cmd and press Enter
 
-### Шаг 2: Создание папки для бота
+2. Go to the folder with the bot:
+```
+cd C:\TelegramBot
+```
 
-1. Создайте папку для бота:
-   ```
-   mkdir ~/telegram_bot
-   ```
+3. Run the bot by entering the command:
+```
+python telegram_shop_bot.py
+```
 
-2. Перейдите в эту папку:
-   ```
-   cd ~/telegram_bot
-   ```
+4. If everything is done correctly, the command line will show information about the bot launch
 
-### Шаг 3: Создание файла с кодом бота
+5. Now go to Telegram and find your bot by the username you specified in BotFather
 
-1. Запустите текстовый редактор для создания файла:
-   ```
-   nano telegram_shop_bot.py
-   ```
+6. Send the bot the /start command and start using
 
-2. Вставьте в открывшийся редактор код бота (содержимое файла telegram_shop_bot.py)
+7. To stop the bot, go back to the command line and press Ctrl+C
 
-3. Сохраните файл, нажав Ctrl+O, затем Enter, и выйдите из редактора, нажав Ctrl+X
+## INSTALLATION ON LINUX
 
-### Шаг 4: Установка необходимых библиотек
+### Step 1: Install Python
 
-1. Находясь в папке с ботом, выполните команду:
-   ```
-   pip3 install aiogram==3.0.0
-   ```
+1. Open a terminal (usually Ctrl+Alt+T)
 
-### Шаг 5: Получение токена Telegram-бота
+2. Update the package list:
+```
+sudo apt update
+```
 
-1. Откройте Telegram и найдите бота @BotFather
+3. Install Python 3.10:
+```
+sudo apt install python3.10 python3.10-venv python3-pip
+```
 
-2. Отправьте сообщение /newbot
+### Step 2: Creating a folder for the bot
 
-3. Следуйте инструкциям BotFather:
-   - Введите название бота
-   - Введите имя пользователя для бота (должно заканчиваться на "bot")
+1. Create a folder for the bot:
+```
+mkdir ~/telegram_bot
+```
 
-4. BotFather пришлет вам токен вида 1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
+2. Go to this folder:
+```
+cd ~/telegram_bot
+```
 
-5. Скопируйте этот токен
+### Step 3: Creating a file with the bot code
 
-### Шаг 6: Настройка бота
+1. Launch a text editor to create a file:
+```
+nano telegram_shop_bot.py
+```
 
-1. Откройте файл бота в редакторе:
-   ```
-   nano telegram_shop_bot.py
-   ```
+2. Paste the bot code (the contents of the telegram_shop_bot.py file) into the editor that opens
 
-2. Найдите строку `API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'`
+3. Save the file by pressing Ctrl+O, then Enter, and exit the editor by pressing Ctrl+X
 
-3. Замените 'YOUR_TELEGRAM_BOT_TOKEN' на ваш токен от BotFather
+### Step 4: Installing the necessary libraries
 
-4. Чтобы узнать свой ID (для админа):
-   - Найдите в Telegram бота @userinfobot
-   - Отправьте ему любое сообщение
-   - Он ответит вам ваш ID
-   
-5. Найдите строку `ADMIN_ID = 12345678`
+1. While in the folder with the bot, run the command:
+```
+pip3 install aiogram==3.0.0
+```
 
-6. Замените 12345678 на ваш ID из предыдущего шага
+### Step 5: Getting a Telegram bot token
 
-7. Сохраните изменения, нажав Ctrl+O, затем Enter, и выйдите из редактора, нажав Ctrl+X
+1. Open Telegram and find the @BotFather bot
 
-### Шаг 7: Запуск бота
+2. Send a message to /newbot
 
-1. Находясь в папке с ботом, выполните команду:
-   ```
-   python3 telegram_shop_bot.py
-   ```
+3. Follow BotFather's instructions:
+- Enter the bot name
+- Enter the username for the bot (must end with "bot")
 
-2. Если все сделано правильно, в терминале появится информация о запуске бота
+4. BotFather will send you a token like 1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-3. Теперь перейдите в Telegram и найдите вашего бота по имени пользователя, которое вы задали в BotFather
+5. Copy this token
 
-4. Отправьте боту команду /start и начните использовать
+### Step 6: Setting up the bot
 
-5. Чтобы остановить бота, вернитесь в терминал и нажмите Ctrl+C
+1. Open the bot file in an editor:
+```
+nano telegram_shop_bot.py
+```
 
-## ДОПОЛНИТЕЛЬНО: КАК СДЕЛАТЬ, ЧТОБЫ БОТ РАБОТАЛ ПОСТОЯННО
+2. Find the line `API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'`
 
-### На Windows:
+3. Replace 'YOUR_TELEGRAM_BOT_TOKEN' to your token from BotFather
 
-1. Создайте файл `start_bot.bat` в той же папке, где находится `telegram_shop_bot.py`
+4. To find out your ID (for admin):
+- Find the @userinfobot bot in Telegram
+- Send it any message
+- It will reply with your ID
 
-2. Откройте этот файл в Блокноте и добавьте в него строку:
-   ```
-   python telegram_shop_bot.py
-   ```
+5. Find the line `ADMIN_ID = 12345678`
 
-3. Сохраните файл
-   
-4. Теперь вы можете запустить бота, просто дважды кликнув на файл `start_bot.bat`
+6. Replace 12345678 with your ID from the previous step
 
-### На Linux:
+7. Save the changes by pressing Ctrl+O, then Enter, and exit the editor by pressing Ctrl+X
 
-1. Установите программу screen:
-   ```
-   sudo apt install screen
-   ```
+### Step 7: Launching the bot
 
-2. Запустите новую сессию screen:
-   ```
-   screen -S telegram_bot
-   ```
+1. While in the folder with the bot, run the command:
+```
+python3 telegram_shop_bot.py
+```
 
-3. Запустите бота:
-   ```
-   python3 telegram_shop_bot.py
-   ```
+2. If everything is done correctly, information about the bot launch will appear in the terminal
 
-4. Нажмите Ctrl+A, затем D, чтобы отсоединиться от сессии screen (бот продолжит работать)
+3. Now go to Telegram and find your bot by the username you specified in BotFather
 
-5. Чтобы вернуться к боту позже, введите:
-   ```
-   screen -r telegram_bot
-   ```
+4. Send bot command /start and start using
 
-## ВОЗМОЖНЫЕ ПРОБЛЕМЫ И ИХ РЕШЕНИЯ
+5. To stop the bot, go back to the terminal and press Ctrl+C
 
-1. **Ошибка "ModuleNotFoundError: No module named 'aiogram'"**
-   - Попробуйте установить библиотеку снова: `pip install aiogram==3.0.0` (Windows) или `pip3 install aiogram==3.0.0` (Linux)
+## ADDITIONAL: HOW TO MAKE THE BOT RUNNING ALL THE TIME
 
-2. **Бот не отвечает после запуска**
-   - Проверьте, правильно ли вы ввели токен от BotFather
-   - Убедитесь, что интернет-соединение работает
-   - Проверьте, нет ли ошибок в командной строке/терминале
+### On Windows:
 
-3. **Ошибка "sqlite3.OperationalError: unable to open database file"**
-   - Убедитесь, что у вас есть права на запись в папку с ботом
-   - На Linux может потребоваться выполнить: `chmod 755 ~/telegram_bot`
+1. Create the file `start_bot.bat` in the same in the folder where `telegram_shop_bot.py` is located
 
-4. **Другие ошибки**
-   - Скопируйте текст ошибки из командной строки/терминала
-   - Воспользуйтесь поиском в интернете или спросите у специалиста
+2. Open this file in Notepad and add the following line to it:
+```
+python telegram_shop_bot.py
+```
+
+3. Save the file
+
+4. Now you can run the bot by simply double-clicking the `start_bot.bat` file
+
+### On Linux:
+
+1. Install the screen program:
+```
+sudo apt install screen
+```
+
+2. Start a new screen session:
+```
+screen -S telegram_bot
+```
+
+3. Run the bot:
+```
+python3 telegram_shop_bot.py
+```
+
+4. Press Ctrl+A, then D to detach from the screen session (the bot will continue to run)
+
+5. To return to the bot later, type:
+```
+screen -r telegram_bot
+```
+
+## POSSIBLE PROBLEMS AND SOLUTIONS
+
+1. **Error "ModuleNotFoundError: No module named 'aiogram'"**
+- Try installing the library again: `pip install aiogram==3.0.0` (Windows) or `pip3 install aiogram==3.0.0` (Linux)
+
+2. **Bot does not respond after launch**
+- Check if you entered the BotFather token correctly
+- Make sure your internet connection is working
+- Check if there are any errors in the command line/terminal
+
+3. **Error "sqlite3.OperationalError: unable to open database file"**
+- Make sure you have write access to the folder with the bot
+- On Linux, you may need to run: `chmod 755 ~/telegram_bot`
+
+4. **Other errors**
+- Copy the error text from the command line/terminal
+- Use an internet search or ask from a specialist
